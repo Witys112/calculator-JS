@@ -1,0 +1,64 @@
+<!-- code write by: Witys112 -->
+<!-- When you see a problem with code, write to me on Discord: .witys -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator JS</title>
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <div id="calculator">
+        <table>
+            <tr>
+                <td colspan="4"><input id="display" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="connected"><button onclick="clearDisplay()"  >C</button></td>
+                <td colspan="2" class="connected"><button onclick="displayUndo()" ><=</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculateFractions()" >1/x</button></td>
+                <td><button onclick="calculatePower()" >^</button></td>
+                <td><button onclick="calculateSqrt()" >sqrt</button></td>
+                <td><button onclick="displayOperator('/')" class="">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="displayNumber('7')">7</button></td>
+                <td><button onclick="displayNumber('8')">8</button></td>
+                <td><button onclick="displayNumber('9')">9</button></td>
+                <td><button onclick="displayOperator('*')" >*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="displayNumber('4')">4</button></td>
+                <td><button onclick="displayNumber('5')">5</button></td>
+                <td><button onclick="displayNumber('6')">6</button></td>
+                <td><button onclick="displayOperator('-')" >-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="displayNumber('1')">1</button></td>
+                <td><button onclick="displayNumber('2')">2</button></td>
+                <td><button onclick="displayNumber('3')">3</button></td>
+                <td><button onclick="displayOperator('+')" >+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="changeNegation()" >+/-</button></td>
+                <td><button onclick="displayNumber('0')">0</button></td>
+                <td><button onclick="displayDecimal()" >.</button></td>
+                <td><button onclick="calculate()" class="operatorButton">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+    <footer>
+        <h4>By: <a href="https://github.com/Witys112" target="_blank">Witys112</a></h4>
+    </footer>
+</body>
+</html>

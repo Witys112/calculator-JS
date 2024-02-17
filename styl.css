@@ -1,0 +1,83 @@
+* {
+    font-family: "Montserrat", "Roboto", "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(37, 37, 37);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: lightgrey;
+}
+
+#calculator,
+header,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    min-width: 100px;
+    height: 80px;
+    background-color: rgb(228, 228, 228);
+    border: none;
+    border-radius: 5px;
+    font-size: 3rem;
+}
+
+.connected {
+    width: 200%;
+    min-width: 200px;
+}
+
+.operatorButton {
+    background-color: rgb(103, 103, 255);
+}
+
+table {
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px rgb(145, 145, 145);
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    max-width: 410px;
+    font-size: 3rem;
+    text-align: right;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(163, 163, 163);
+}
+
+button:hover {
+    background-color: rgb(199, 199, 199);
+}
+
+.operatorButton:hover {
+    background-color: rgb(49, 49, 255);
+}
+
+button:active {
+    background-color: rgb(151, 151, 151);
+}
+
+.operatorButton:active {
+    background-color: rgb(0, 0, 255);
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
